@@ -3,7 +3,7 @@ import postcss from "rollup-plugin-postcss";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import resolve from "@rollup/plugin-node-resolve";
-import packageJSON from "./package.json";
+import packageJSON from "./package.json" assert { type: "json" };
 
 const config = [
 	{

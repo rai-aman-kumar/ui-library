@@ -4,7 +4,7 @@
     "target": "ESNext",
 
     // doesn't convert the JSX snippet using createElement() or jsx() calls
-    "jsx": "preserve",
+    "jsx": "react-jsx",
 
     // configs related to .d.ts(declaration) files
     "declaration": true,
@@ -12,6 +12,7 @@
     "emitDeclarationOnly": true,
     // need to check, should be okay though
     "noEmit": false,
+    "noEmitOnError": true,
     
     // not allowing any JS files in the project
     "allowJs": false,
