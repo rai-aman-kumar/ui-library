@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    // doesn't transpile the code
+    "target": "ESNext",
+
+    // doesn't convert the JSX snippet using createElement() or jsx() calls
+    "jsx": "preserve",
+
+    // configs related to .d.ts(declaration) files
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true,
+    // need to check, should be okay though
+    "noEmit": false,
+    
+    // not allowing any JS files in the project
+    "allowJs": false,
+
+    // moudule and its resolution config
+    "module": "ESNext",
+    // might need to change it to bundler
+    "moduleResolution": "Node",
+
+    // need to check this one too
+    "outDir": "dist",
+
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+
+    // skips type checking for .d.ts(type declaration) files
+    "skipLibCheck": true,
+
+    // allows to use lib that export cjs/umd etc to be consumed in the project
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // will make sure filecasing issue won't happen
+    "forceConsistentCasingInFileNames": true,
+
+    // core ts settings to configure how strict type checking should be
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "allowUnreachableCode": false,
+
+    // libs for which types are available globally without import
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+
+    // aliases
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+
+  },
+
+  // pattern for files for ts to compile
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+
+  // pattern for files for ts to ignore
+  "exclude": [
+    "node_modules"
+  ]
+}

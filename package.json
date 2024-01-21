@@ -1,11 +1,12 @@
 {
   "name": "@logward/ui-library",
   "version": "0.0.1",
-  "description": "React UI library",
+  "description": "Library of React components",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Aman Kumar",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
